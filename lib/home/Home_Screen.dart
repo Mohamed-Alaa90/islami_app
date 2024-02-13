@@ -34,30 +34,28 @@ class _HomeScreenState extends State<HomeScreen> {
         )),
         bottomNavigationBar: BottomNavigationBar(
             onTap: (int index) {
-              selectedIndex = index;
-              setState(() {});
+              setState(() {
+                selectedIndex = index;
+              });
             },
             currentIndex: selectedIndex,
             items: [
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
-                  icon:
-                      const Image(image: AssetImage('assets/images/quran.png')),
+                  icon: const ImageIcon(AssetImage('assets/images/quran.png')),
                   label: 'Quran'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
-                  icon:
-                      const Image(image: AssetImage('assets/images/hades.png')),
+                  icon: const ImageIcon(AssetImage('assets/images/hades.png')),
                   label: 'Hades'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
-                  icon:
-                      const Image(image: AssetImage('assets/images/sebha.png')),
+                  icon: const ImageIcon(
+                      AssetImage('assets/images/sebha_blue.png')),
                   label: 'Sebha'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
-                  icon:
-                      const Image(image: AssetImage('assets/images/radio.png')),
+                  icon: const ImageIcon(AssetImage('assets/images/radio.png')),
                   label: 'Radio'),
             ]),
       ),

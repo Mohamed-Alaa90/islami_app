@@ -18,7 +18,7 @@ class MyTheme {
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: lightPrimary,
         selectedItemColor: Colors.black,
-        selectedIconTheme: IconThemeData(color: Colors.black),
+        selectedIconTheme: IconThemeData(color: Colors.black,),
         unselectedItemColor: Colors.white,
         showSelectedLabels: true,
         showUnselectedLabels: false,
