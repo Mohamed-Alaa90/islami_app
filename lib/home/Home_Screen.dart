@@ -8,7 +8,6 @@ import 'package:islami_app_v1/ui/sebha_tab.dart';
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'Home-screen';
 
-  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -17,7 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
-  List<Widget> screenTab = [QuranTab(), HadesTab(), RadioTab(), SebhaTab()];
+  List<Widget> screenTab = [QuranTab(), HadesTab(), SebhaTab(),RadioTab() ];
 
   @override
   Widget build(BuildContext context) {
