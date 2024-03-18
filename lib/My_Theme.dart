@@ -9,6 +9,12 @@ class MyTheme {
   static final ThemeData lightTheme = ThemeData(
       primaryColor: lightPrimary,
       scaffoldBackgroundColor: Colors.transparent,
+      dividerTheme:
+      const DividerThemeData(
+
+          thickness: 1.5,
+          color: Color(0xffB7935F))
+      ,
       appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,

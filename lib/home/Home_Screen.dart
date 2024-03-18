@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:islami_app_v1/ui/hades_tab.dart';
-import 'package:islami_app_v1/ui/quran_tab.dart';
-import 'package:islami_app_v1/ui/radio_tab.dart';
-import 'package:islami_app_v1/ui/sebha_tab.dart';
+import 'package:islami_app_v1/ui/Hades/hades_tab.dart';
+import 'package:islami_app_v1/ui/Quran/quran_tab.dart';
+import 'package:islami_app_v1/ui/Radio/radio_tab.dart';
+import 'package:islami_app_v1/ui/Sebha/sebha_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'Home-screen';

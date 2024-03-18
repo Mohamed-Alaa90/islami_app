@@ -14,8 +14,11 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 3), () {Navigator.popAndPushNamed(context, HomeScreen.routeName);});
+    Timer(const Duration(seconds: 3), () {
+      Navigator.popAndPushNamed(context, HomeScreen.routeName);
+    });
   }
+
   @override
   Widget build(BuildContext context) {
     return Image.asset(
