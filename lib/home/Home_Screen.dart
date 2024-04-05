@@ -5,6 +5,8 @@ import 'package:islami_app_v1/ui/Quran/quran_tab.dart';
 import 'package:islami_app_v1/ui/Radio/radio_tab.dart';
 import 'package:islami_app_v1/ui/Sebha/sebha_tab.dart';
 
+import '../ui/Settings/Settings_tab.dart';
+
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'Home-screen';
 
@@ -16,7 +18,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
-  List<Widget> screenTab = [QuranTab(), HadesTab(), SebhaTab(),RadioTab() ];
+  List<Widget> screenTab = [QuranTab(),HadesTab(),SebhaTab(),RadioTab(),SettingTab()];
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: const ImageIcon(AssetImage('assets/images/hades.png')),
-                  label: 'Hades'),
+                  label: 'Hadeth'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: const ImageIcon(
@@ -56,6 +58,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: const ImageIcon(AssetImage('assets/images/radio.png')),
                   label: 'Radio'),
+              BottomNavigationBarItem(
+                  backgroundColor: Theme.of(context).primaryColor,
+                  icon: const Icon(Icons.settings),label: 'Setting'),
+
             ]),
       ),
     );
